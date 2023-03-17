@@ -1,7 +1,7 @@
 // J'appelle la bibliothèque de fonction "http"
 const HTTP = require("http");
 
-// Je définie le port réseau d'écoute
+// Je définis le port réseau d'écoute
 const PORT =  8080
 
 // Je crée mon serveur
@@ -9,7 +9,7 @@ const SERVER = HTTP.createServer(function (requete, reponse) {
 
     console.log("Requête reçue");
     
-    // Je définie la réponse envoyée lorsqu'une requête est reçue
+    // Je définis la réponse envoyée lorsqu'une requête est reçue
     reponse.setHeader("Content-Type", "text/html");
     reponse.writeHead(200);
     reponse.end(`<html><body><h1>Ca fonctionne !</h1></body></html>`);
